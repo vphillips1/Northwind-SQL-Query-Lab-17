@@ -19,7 +19,7 @@ SELECT LastName, FirstName
 From Employees 
 WHERE Employees.HireDate > '01-01-1994' and Employees.HireDate <= '01-09-2021'
 
-SELECT DATEDIFF(YEAR, HireDate, '2021/01/09') FROM Employees as years;
+SELECT DATEDIFF(YEAR, HireDate, '2021/01/09') AS [Years Worked] FROM Employees AS years;
 
 Select * From Products 
 SELECT QuantityPerUnit FROM Products Order by QuantityPerUnit ASC
